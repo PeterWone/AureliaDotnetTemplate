@@ -1,0 +1,33 @@
+.keypad {
+    border-spacing: 6px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    font-weight: 400;
+    height: 20em;
+    width: 13em;
+}
+
+.keypad td {
+    border: 1.5px solid white;
+    border-radius: 6px;
+    color: white;
+    font-family: monospace;
+    height: 2.5em;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.small-font {
+    font-size: 0.8em;
+    float: left;
+    margin: -5px 0;
+}
+
+.keypad td {
+    max-width: 1.3em;
+}
+.keypad .yellow {
+    color: yellow;
+    border-color: yellow;
+}

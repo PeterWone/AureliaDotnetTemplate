@@ -1,0 +1,54 @@
+<template>
+  <div if.bind="app.isLoading">LOADING</div>
+  <div if.bind="!app.isLoading">
+    <h1>
+      Everything &ndash;
+      ${app.mesh["EVERYTHING"].itemCount} items
+      <span if.bind="app.mesh['EVERYTHING'].urgentCount"
+        style="color:red">${app.mesh["EVERYTHING"].urgentCount}
+        urgent</span>
+    </h1>
+    <grid parent-view-model.bind="$this" if.bind="app.items"
+      data.bind="app.items" key.bind="app.itemKey"
+      global-key-handling.bind="true"
+      selected-grid-row.bind="selectedGridRow"
+      view-model.ref="grid" grid-action.delegate="showItem(grid.currentRow.model)">
+      <template replace-part="head">
+        <th class="min-width"></th>
+        <th class="text-center">Job / Item#</th>
+        <th>Product</th>
+        <th>D&times;W</th>
+        <th class="text-center">Mesh</th>
+        <th class="text-center">Hung</th>
+        <th class="text-center">Group</th>
+        <th class="text-center">Lock</th>
+        <th>Client</th>
+      </template>
+      <template replace-part="row">
+        <td class="text-center min-width">
+          <img if.bind="row.model.isUrgent" src.bind="'alert.svg' | glyphContext">
+          <img if.bind="row.model.isWonky" src.bind="'out-of-square.svg' | glyphContext">
+          <img if.bind="row.model.mullions" src.bind="'mullion.svg' | glyphContext">
+          <img if.bind="row.model.midrails" src.bind="'midrail.svg' | glyphContext">
+        </td>
+        <td class="text-center">${row.model.fidNumber} /
+          ${row.model.itemNumber}</td>
+        <td>${row.model.productDescription}</td>
+        <td>${row.model.maxDrop - (2 *
+          row.model.shoulder)}&times;${row.model.maxWidth -
+          (2 * row.model.shoulder)}</td>
+        <td class="text-center">${row.model.meshType}</td>
+        <td class="text-center">
+          <span if.bind="row.model.isHung">
+            <span style="color:grey; font-size: smaller;">${row.model.painted
+              | datetime:'D'}</span>
+            ${row.model.painted | datetime:'H:mm'}
+          </span>
+        </td>
+        <td class="text-center">${row.model.groupCode}</td>
+        <td class="text-center">${row.model.lockSide}</td>
+        <td>${row.model.customersClientName}</td>
+      </template>
+    </grid>
+  </div>
+</template>

@@ -1,0 +1,75 @@
+<template>
+    <require from="./numeric-keypad.css"></require>
+    <table class="keypad" show.bind="isKeyboardStateAvailable">
+        <tr>
+            <td>Esc</td>
+            <td>Ctrl</td>
+            <td>Alt</td>
+            <td>
+                <span class="glyphicon glyphicon-arrow-left"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="small-font">Num Lock</span>
+            </td>
+            <td>/</td>
+            <td>*</td>
+            <td>&mdash;</td>
+        </tr>
+        <tr if.bind="isNumLockActive">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td rowspan="2">+</td>
+        </tr>
+        <tr if.bind="!isNumLockActive">
+            <td class="yellow">Home</td>
+            <td class="yellow">
+                <span class="glyphicon glyphicon-triangle-top"></span>
+            </td>
+            <td class="yellow">PgUp</td>
+            <td rowspan="2">+</td>
+        </tr>
+        <tr if.bind="isNumLockActive">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr if.bind="!isNumLockActive">
+            <td class="yellow">
+                <span class="glyphicon glyphicon-triangle-left"></span>
+            </td>
+            <td></td>
+            <td class="yellow">
+                <span class="glyphicon glyphicon-triangle-right"></span>
+            </td>
+        </tr>
+        <tr if.bind="isNumLockActive">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="2" style="vertical-align: top; padding-top: 1em;">
+                <span class="small-font">Enter</span>
+            </td>
+        </tr>
+        <tr if.bind="!isNumLockActive">
+            <td class="yellow">End</td>
+            <td class="yellow">
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </td>
+            <td class="yellow">PgDn</td>
+            <td rowspan="2" style="vertical-align: top; padding-top: 1em;">
+                <span class="small-font">Enter</span>
+            </td>
+        </tr>
+        <tr if.bind="isNumLockActive">
+            <td colspan="2">0</td>
+            <td>.</td>
+        </tr>
+        <tr if.bind="!isNumLockActive">
+            <td colspan="2" class="yellow">Del</td>
+            <td class="yellow">Ins</td>
+        </tr>
+    </table>
+</template>

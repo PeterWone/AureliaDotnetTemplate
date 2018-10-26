@@ -1,0 +1,35 @@
+SELECT * FROM (
+SELECT
+  FidNumber,L.ItemNumber
+  ,(select count(*) from Component C join ItemOptions OP ON C.ID_Component=OP.ID_Component where OP.OrderLine_Key=L.OrderLine_Key AND LEFT([Name],3)='mid') AS Midrails
+  ,(select count(*) from Component C join ItemOptions OP ON C.ID_Component=OP.ID_Component where OP.OrderLine_Key=L.OrderLine_Key AND LEFT([Name],7)='mullion') AS Mullions
+  ,olemax.STATUS Stage
+  ,olemax.Value [At]
+  ,l.DoorOrWindow
+  ,CASE WHEN L.MatchingDoor IS NOT NULL AND L.MatchingDoor != '' AND L.ReceivingDoor='T' THEN 1 ELSE 0 END AS IsActiveDoor
+  ,CASE WHEN Urgent='T' THEN 1 ELSE 0 END AS IsUrgent
+  ,LEFT(l.Type,2) [MeshType]  --,[TYPE],Product
+  ,L.MaxDrop, L.MaxWidth
+  ,P.CodeDescription AS ProductDescription
+  ,L.GroupCode, L.LockSide
+  ,DateDiff(day,InFactory,getdate()) AS DaysInFactory
+  ,CustomersClientName
+  ,O.Order_Key,L.OrderLine_Key,L.Painted
+  ,CASE WHEN l.Diagional > 0 THEN 1 ELSE 0 END AS IsWonky
+  ,CASE WHEN L.Painted IS NOT NULL AND L.Painted > InFactory THEN 1 ELSE 0 END AS IsHung
+FROM OrderLines L NOHOLDLOCK
+JOIN OLEmax NOHOLDLOCK ON L.OrderLine_Key=OLEmax.OrderLine_Key
+JOIN ORDERS O NOHOLDLOCK ON O.ORDER_KEY=L.ORDER_KEY
+JOIN LookupCode P NOHOLDLOCK ON L.Product = P.CodeKey
+WHERE 1=1
+  -- AND FidNumber=260281 AND ItemNumber = 1
+  AND P.CodeType = 'PROD' AND P.Active = 'T'
+  AND LEFT(l.Type,2) IN ('FF','GD','PT','SL')
+  AND L.Meshcutter is NULL AND L.Product != 'ACC' AND L.Status != 'E'
+  AND DateDiff(day,InFactory,getdate()) < 14
+  AND (L.Dispatched IS NULL OR L.Dispatched < InFactory)
+  AND InFactory IS NOT NULL
+  AND MeshcutterCommitted IS NULL
+) T 
+ORDER BY 
+  FIDNUMBER --This is SLOWER if you don't sort. Go figure. Yay Sybase.

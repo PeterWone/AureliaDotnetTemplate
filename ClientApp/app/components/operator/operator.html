@@ -1,0 +1,14 @@
+<template>
+  <grid parent-view-model.bind="$this" if.bind="app.staff"
+    data.bind="app.staff" key.bind="operatorKey" where.bind="where"
+    global-key-handling.bind="true" 
+    view-model.ref="grid" grid-action.delegate="logonoff(grid.currentRow.model)">
+    <template replace-part="head">
+      <th>Operator <span if.bind="0">${value.contact_Key || "NOTSET"}</span></th>
+    </template>
+    <template replace-part="row">
+      <td><b>${row.model.surname}</b>
+        ${row.model.firstName}</td>
+    </template>
+  </grid>
+</template>

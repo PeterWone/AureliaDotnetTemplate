@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="124.5" height="188.5" viewBox="0 0 124.50 188.50" enable-background="new 0 0 124.50 188.50" xml:space="preserve">
+	<rect x="0.25" y="32.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 4.00 43.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">Num</tspan>
+		<tspan x="0" dy="1.35em" style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">Lock</tspan>
+	</text>
+	<rect x="32.25" y="32.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 42.00 51.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:12.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">/</tspan>
+	</text>
+	<rect x="0.25" y="64.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="32.25" y="64.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="64.25" y="32.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 73.00 63.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:24.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">*</tspan>
+	</text>
+	<rect x="96.25" y="32.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 104.00 55.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:24.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">-</tspan>
+	</text>
+	<rect x="64.25" y="64.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 67.00 82.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1">PgUp</tspan>
+	</text>
+	<rect x="0.25" y="96.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="32.25" y="96.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="0.25" y="128.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="32.25" y="128.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="64.25" y="96.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="96.25" y="64.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="60"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 103.00 84.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:18.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">+</tspan>
+	</text>
+	<rect x="64.25" y="128.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="0.25" y="160.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="60" height="28"/>
+	<rect x="64.25" y="160.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<rect x="96.25" y="128.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="60"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 99.00 145.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">Enter</tspan>
+	</text>
+	<rect x="0.25" y="0.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 6.00 19.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:9.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">Esc</tspan>
+	</text>
+	<rect x="32.25" y="0.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 38.00 19.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:9.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">Ctrl</tspan>
+	</text>
+	<rect x="64.25" y="0.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 71.00 19.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:9.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">Alt</tspan>
+	</text>
+	<rect x="96.25" y="0.25" fill="#55555A" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" width="28" height="28"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 103.00 21.00)" xml:space="preserve">
+		<tspan style=" font-family:Wingdings; font-size:12.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">ï</tspan>
+	</text>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 1.00 82.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1">Home</tspan>
+	</text>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 6.00 146.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1">End</tspan>
+	</text>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 67.00 146.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1">PgDn</tspan>
+	</text>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 8.00 178.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1">Ins</tspan>
+	</text>
+	<path fill="#FFFFFF" fill-opacity="1" stroke-width="3.45" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1" d="M 22.25,110.25L 6.25002,110.25L 11.5833,106.25L 11.5833,114.25L 6.25,110.25"/>
+	<path fill="#FFFFFF" fill-opacity="1" stroke-width="3.45" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1" d="M 70.2499,110.25L 86.2499,110.25L 80.9166,114.25L 80.9166,106.25L 86.25,110.25"/>
+	<path fill="#FFFFFF" fill-opacity="1" stroke-width="3.45" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1" d="M 46.25,86.2502L 46.25,69.2501L 50.25,74.9168L 42.25,74.9168L 46.25,69.2501"/>
+	<path fill="#FFFFFF" fill-opacity="1" stroke-width="3.45" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1" d="M 46.2498,136.25L 46.2498,151.25L 42.2498,146.25L 50.2498,146.25L 46.2498,151.25"/>
+	<text transform="matrix(1.0000000000000000 0.0000000000000000 0.0000000000000000 1.0000000000000000 71.00 178.00)" xml:space="preserve">
+		<tspan style=" font-family:Segoe UI; font-size:7.000000pt;" letter-spacing="0.00em" fill="#FFFFFF" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" stroke="#FFFF00" stroke-opacity="1">Del</tspan>
+	</text>
+</svg>

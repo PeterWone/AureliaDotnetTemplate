@@ -1,18 +1,47 @@
-<template>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#/home">Navbar</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<template bindable="router,app">
+    <require from="./navmenu.css"></require>
+    <require from="../numeric-keypad/numeric-keypad"></require>
+    <require from="@fortawesome/fontawesome-free-solid"></require>
 
-		<div class="navbar-collapse collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li repeat.for="row of router.navigation" class="nav-item ${row.isActive ? 'active' : ''}">
-                    <a href.bind="row.href" class="nav-link">
-                        <i class="${row.settings.icon}"></i> ${row.title}
-                    </a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+    <div class="main-nav">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/home">
+                    <span if.bind="app.operator">${app.operator.firstName} ${app.operator.surname}</span>
+                    <span if.bind="!app.operator">Mesh login</span>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li repeat.for="row of router.navigation" class="${ row.isActive ? 'link-active' : '' }">
+                        <a href.bind="row.href">
+                            <kbd>${ row.settings.keys[0] }</kbd>
+                            ${ row.title }
+                            <span if.bind="row.settings.tag" style="margin-left: 0.3em; color:yellow;">
+                                ${ app.mesh[row.settings.tag].itemCount }
+                                <span if.bind="app.mesh[row.settings.tag].urgentCount > 0" style="color:orangered">
+                                    (${ app.mesh[row.settings.tag].urgentCount })
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <numeric-keypad></numeric-keypad>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-left:1em;">
+                <span if.bind="app.refreshCountdown">${app.refreshCountdown}</span>
+                <span if.bind="!app.refreshCountdown"><span style="font-family:Webdings;">~</span></span>
+            </div>
+        </div>
+    </div>
 </template>

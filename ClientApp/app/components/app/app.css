@@ -1,0 +1,90 @@
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    .body-content {
+        padding-top: 50px;
+    }
+}
+
+.tab-pane {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 1em;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+tr.selected td.marker {
+    background-color: slateblue;
+    width: 0.5em;
+}
+
+tr.selected td {
+    color: slateblue;
+}
+
+.tab-pane.active {
+    background-color: white;
+}
+
+td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+td.min-width,
+th.min-width {
+    width: 0px;
+}
+
+.label-as-badge {
+    border-radius: 1em;
+}
+
+body {
+    background-color: #eee;
+    font-size: 2.4em;
+}
+
+.selected {
+    background-color: #e8e8ff;
+}
+
+kbd {
+    background-color: lightblue;
+    color: blue;
+    display: inline-block;
+    min-width: 1.6em;
+    text-align: center;
+}
+
+.ff {
+    background-image: url('../../../resources/converters/glyphs/mesh/big-ff.svg');
+    background-size: 100%;
+}
+
+.navbar-brand {
+    color: orange;
+}
+
+.noselect {
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+.c {
+    text-align: center
+}
+.r {
+    text-align: right
+}
+        

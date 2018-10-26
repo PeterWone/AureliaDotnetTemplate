@@ -1,0 +1,14 @@
+MeshType_Key    Description                    ProductType Active 
+-----------------------------------------------------------------
+BDD000000000003 Small Diamond - Black Anodised SDB         T      
+BDD000000000005 Large Diamond - Mill Finish    LDM         T      
+COS000006923871 ForceField                     FF          T      
+COS000006930679 Cast Panel                     SP          T      
+COS000006930700 Insect Screen                  IS          T      
+COS000006939718 Large Diamond - Black Anodised LDB         T      
+COS000006940430 Small Diamond - Mill Finish    SDM         T      
+COS000008253264 Protec                         PR          T      
+COS000019204315 Guardian                       GD          T      
+
+(9 rows)
+

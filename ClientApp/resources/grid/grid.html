@@ -1,0 +1,28 @@
+<template>
+    <require from="./grid.css"></require>
+    <table tabindex="0" class="table table-hover no-select-text"
+        keydown.delegate="handlerKeyDown($event)">
+        <thead>
+            <th></th>
+            <th element-as="template" replaceable part="head">Dummy
+                TH</th>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr repeat.for="row of rows" click.delegate="setCurrentRowObject(row)"
+                dblclick.delegate="$parent.dblclick(row)"
+                class="row-${$index}${row.hasFocus ? ' row-selected' : ''}">
+                <td class="marker" click.delegate="$parent.taggle(row)">
+                    <div style="width:1em">
+                        <span show.bind="row.isTagged">
+                            <span class="fa fa-check"></span>
+                        </span>
+                    </div>
+                </td>
+                <td element-as="template" replaceable part="row"
+                    with.bind="row">Dummy TD</td>
+                <td class="marker"></td>
+            </tr>
+        </tbody>
+    </table>
+</template>

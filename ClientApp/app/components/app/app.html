@@ -1,8 +1,16 @@
 <template>
-	<require from="../navmenu/navmenu"></require>
-	<require from="./app.scss"></require>
-	<navmenu></navmenu>
-	<div class="container-fluid">
-		<router-view></router-view>
-	</div>
+    <require from="../navmenu/navmenu.html"></require>
+    <require from="./app.css"></require>
+    <require from="../../../resources/modern-dialog/modern-dialog"></require>
+    <modern-dialog owner.bind="$this"></modern-dialog>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <navmenu router.bind="router" app.bind="$this"></navmenu>
+            </div>
+            <div class="col-sm-10 body-content">
+                <router-view></router-view>
+            </div>
+        </div>
+    </div>
 </template>

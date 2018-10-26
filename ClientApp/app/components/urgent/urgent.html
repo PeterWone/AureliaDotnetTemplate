@@ -1,0 +1,31 @@
+<template>
+  <h1>
+    Urgent &ndash;
+    ${app.mesh["HUNG"].itemCount} items
+  </h1>
+  <grid parent-view-model.bind="$this" if.bind="app.items"
+    data.bind="app.items" key.bind="app.itemKey" where.bind="where"
+    global-key-handling.bind="true" selected-grid-row.bind="selectedGridRow"
+    view-model.ref="grid" grid-action.delegate="showItem(grid.currentRow.model)">
+    <template replace-part="head">
+      <th>Job / Item#</th>
+      <th>Product</th>
+      <th>D&times;W</th>
+      <th class="text-center min-width">Mesh</th>
+      <th class="text-center min-width">Group</th>
+      <th class="text-center min-width">Lock</th>
+      <th>Client</th>
+    </template>
+    <template replace-part="row">
+      <td>${row.model.fidNumber} / ${row.model.itemNumber}</td>
+      <td>${row.model.productDescription}</td>
+      <td>${row.model.maxDrop - (2 *
+        row.model.shoulder)}&times;${row.model.maxWidth -
+        (2 * row.model.shoulder)}</td>
+      <td class="text-center">${row.model.meshType}</td>
+      <td class="text-center">${row.model.groupCode}</td>
+      <td class="text-center">${row.model.lockSide}</td>
+      <td>${row.model.customersClientName}</td>
+    </template>
+  </grid>
+</template>

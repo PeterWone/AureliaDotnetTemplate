@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="40" height="40" viewBox="0 0 64.00 64.00" enable-background="new 0 0 64.00 64.00" xml:space="preserve">
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="8" y1="0" x2="8" y2="64"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="20" y1="0" x2="20" y2="64"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="32" y1="0" x2="32" y2="64"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="44" y1="0" x2="44" y2="64"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="56" y1="0" x2="56" y2="64"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="64" y1="56" x2="0" y2="56"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="64" y1="44" x2="0" y2="44"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="0" y1="32" x2="64" y2="32"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="64" y1="20" x2="0" y2="20"/>
+	<line fill="none" stroke-width="1.95" stroke-linejoin="round" stroke="#006432" stroke-opacity="1" x1="0" y1="8" x2="64" y2="8"/>
+	<g>
+		<path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 42.225,18L 26.9833,18L 26.9833,27.6L 39.725,27.6C 40.9028,27.6 41.7819,27.8681 42.3625,28.4042C 42.943,28.9403 43.2333,29.6556 43.2333,30.55C 43.2333,31.4444 42.9389,32.1542 42.35,32.6792C 41.7611,33.2042 40.8861,33.4667 39.725,33.4667L 26.9833,33.4667L 26.9833,45.8833C 26.9833,47.4556 26.6361,48.6236 25.9417,49.3875C 25.2472,50.1514 24.3555,50.5333 23.2667,50.5333C 22.1555,50.5333 21.2528,50.1472 20.5583,49.375C 19.8639,48.6028 19.5167,47.4361 19.5167,45.875L 19.5167,16.8167C 19.5167,15.7222 19.6764,14.8264 19.9958,14.1292C 20.3153,13.4319 20.8139,12.925 21.4917,12.6083C 22.1694,12.2917 23.0361,12.1333 24.0917,12.1333L 42.225,12.1333C 43.4528,12.1333 44.3667,12.4028 44.9667,12.9417C 45.5667,13.4806 45.8667,14.1833 45.8667,15.05C 45.8667,15.9389 45.5667,16.6528 44.9667,17.1917C 44.3667,17.7306 43.4528,18 42.225,18 Z "/>
+	</g>
+</svg>

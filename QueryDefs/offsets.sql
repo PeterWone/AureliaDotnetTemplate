@@ -1,0 +1,1 @@
+select NodeId, [Value] FROM conf.KeyValueTree where ParentId in ('FRAMEOFFSETS', 'MIDOFFSETS','FRAMEOFFSETS_SL')

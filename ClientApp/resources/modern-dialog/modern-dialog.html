@@ -1,0 +1,23 @@
+<template>
+  <require from="./modern-dialog.css"></require>
+  <div class="dialog-background" show.bind="status==='modal'"></div>
+  <div class="dialog-foreground" show.bind="status==='modal'" keydown.delegate="keydown($event)">
+    <div class="container" keydown.delegate="keydown($event)">
+      <div class="row">
+        <h1 show.bind="heading" class="col-xs-12">${heading}</h1>
+      </div>
+      <div class="row">
+        <div show.bind="body" class="col-xs-12" innerhtml="${body}"></div>
+      </div>
+      <div>&nbsp;</div>
+      <div class="row">
+        <div class="col-xs-4 col-md-2">
+          <button class="btn btn-block btn-default" click.delegate="ok()" ref="buttonOk">OK</button>
+        </div>
+        <div class="col-xs-4 col-md-2">
+          <button class="btn btn-block btn-default" click.delegate="cancel()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
