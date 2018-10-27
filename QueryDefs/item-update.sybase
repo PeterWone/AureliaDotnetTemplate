@@ -1,0 +1,4 @@
+update OrderLines
+set meshcut = getdate()
+where OrderLine_Key = @OrderLine_Key 
+and meshcutCommitted is null

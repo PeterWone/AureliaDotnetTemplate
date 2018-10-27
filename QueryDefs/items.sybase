@@ -25,11 +25,11 @@ WHERE 1=1
   -- AND FidNumber=260281 AND ItemNumber = 1
   AND P.CodeType = 'PROD' AND P.Active = 'T'
   AND LEFT(l.Type,2) IN ('FF','GD','PT','SL')
-  AND L.Meshcutter is NULL AND L.Product != 'ACC' AND L.Status != 'E'
+  AND L.Meshcut is NULL AND L.Product != 'ACC' AND L.Status != 'E'
   AND DateDiff(day,InFactory,getdate()) < 14
   AND (L.Dispatched IS NULL OR L.Dispatched < InFactory)
   AND InFactory IS NOT NULL
-  AND MeshcutterCommitted IS NULL
+  AND MeshcutCommitted IS NULL
 ) T 
 ORDER BY 
   FIDNUMBER --This is SLOWER if you don't sort. Go figure. Yay Sybase.

@@ -1,4 +1,0 @@
-update OrderLines
-set Meshcutter = getdate()
-where OrderLine_Key = @OrderLine_Key 
-and MeshcutterCommitted is null

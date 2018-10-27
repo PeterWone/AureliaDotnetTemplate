@@ -22,8 +22,8 @@ namespace Meshcutter.Controllers
     {
       this.syb = cxn;
       this.mssql = mssql;
-      this.MeshcutterSql = System.IO.File.ReadAllText("./querydefs/Meshcutter.sybase");
-      this.MeshcutterUpdate = System.IO.File.ReadAllText("./querydefs/MeshcutterUpdate.sybase");
+      this.MeshcutterSql = System.IO.File.ReadAllText("./querydefs/items.sybase");
+      this.MeshcutterUpdate = System.IO.File.ReadAllText("./querydefs/item-update.sybase");
       this.offsets = from row in this.mssql.Query(System.IO.File.ReadAllText("./querydefs/offsets.sql"))
                      select new FrameOffsets(row.NodeId, row.Value);
     }
