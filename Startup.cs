@@ -1,17 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Diagnostics;
 using Newtonsoft.Json.Serialization;
 using System.Data;
 using System.Data.Odbc;
-using Microsoft.Extensions.Options;
 using System.Data.SqlClient;
 
 namespace Meshcutter
@@ -38,23 +32,15 @@ namespace Meshcutter
             var sybaseConnectionString = connectionStrings[Configuration["SybaseConnectionString"]];
             var mssqlConnectionString = connectionStrings[Configuration["MssqlConnectionString"]];
 
-            // DEFUNCT EF Core approach
-            // services.Configure<OdbcConnectionOptions>(Configuration);
-            // services.AddDbContext<Meshcutter.Model.ProwlerDbContext>(options => 
-            //   options.UseSqlServer(defaultConnectionString));
-
-            // Since we have more than one connection there's no point having a "default" connection
-            // services.AddTransient<IDbConnection, IDbConnection>(options => {
-            //     return new OdbcConnection(defaultConnectionString);
-            // });
-
             // MSSQL
-            services.AddTransient<SqlConnection, SqlConnection>(options => {
+            services.AddTransient<SqlConnection, SqlConnection>(options =>
+            {
                 return new SqlConnection(mssqlConnectionString);
             });
 
             // SYBASE
-            services.AddTransient<IDbConnection, IDbConnection>(options => {
+            services.AddTransient<IDbConnection, IDbConnection>(options =>
+            {
                 return new OdbcConnection(sybaseConnectionString);
             });
             // force camel case for dynamic objects same as everything else
@@ -80,9 +66,13 @@ namespace Meshcutter
                     HotModuleReplacement = true
                 });
             }
-            else
+            else if (env.IsProduction())
             {
                 app.UseExceptionHandler("/Home/Error");
+            }
+            else
+            {
+                app.UseDeveloperExceptionPage();
             }
 
             app.UseStaticFiles();

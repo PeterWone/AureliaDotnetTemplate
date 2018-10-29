@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <MySourceFiles Include="ClientApp\**\*.svg" />
-    <QueryDefs Include="**\*.sql" />
   </ItemGroup>
 
   <Target Name="CopyImages" AfterTargets="Build">
@@ -48,7 +47,7 @@
 
     <!-- Include the newly-built files in the publish output -->
     <ItemGroup>
-      <DistFiles Include="wwwroot\dist\**" />
+      <DistFiles Include="wwwroot\dist\**;QueryDefs\**" />
       <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
         <RelativePath>%(DistFiles.Identity)</RelativePath>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
