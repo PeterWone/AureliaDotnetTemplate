@@ -1,3 +1,4 @@
+declare var require;
 const glyphContext = require.context(
     ".",
     true,
